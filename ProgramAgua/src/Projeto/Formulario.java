@@ -24,7 +24,8 @@ public class Formulario {
 				          +"\nIdade: "+idade
 				          +"\nGênero: "+genero
 				          +"\nEstatura: "+estatura
-				          +"\nPeso: "+peso);
+				          +"\nPeso: "+peso
+				          +"\n");
 	}
 	
 	public String getNome() {
