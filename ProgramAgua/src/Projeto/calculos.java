@@ -4,7 +4,7 @@ public class calculos extends Formulario {
 
 	public calculos(String nome, String genero, int idade, float estatura, float peso)
 	{
-		super(nome, genero, idade, estatura, peso);
+		super(nome,genero, idade, estatura, peso);
 	}
 		
 	public void QtdAguaNecessaria() 

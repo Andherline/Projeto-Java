@@ -7,7 +7,7 @@ public class testeProjeto {
 	
 	public static calculos preencher()  {
 		
-		String nome;
+		String nome;		
 		String genero;
 		int idade;
 		float estatura;
@@ -48,12 +48,12 @@ public class testeProjeto {
 			System.out.println("\n------------------LISTA DE OPÇÕES---------------------");
 			System.out.println("\n(1) Deseja adicionar novo paciente.");
 			System.out.println("\n(2) Deseja remover paciente do sistema.");
-			System.out.println("\n(3) Deseja atualizar informação do paciente.");
+			System.out.println("\n(3) Deseja atualizar alguma informação do paciente.");
 			System.out.println("\n(4) Deseja mostrar lista de pacientes.");
-			System.out.println("\n(5) Deseja mostrar quantidade necessária de água e IMC de pacientes.");
+			System.out.println("\n(5) Deseja visualizar quantidade necessária de água e IMC de pacientes.");
 			System.out.println("\n(0) Deseja sair do programa.");
 			System.out.println("\n------------------------------------------------------");
-			System.out.println("\nDigite sua opção: ");
+			System.out.println("\nDigite uma opção: ");
 			op = ler.nextInt();
 			
 			switch(op)
@@ -61,8 +61,7 @@ public class testeProjeto {
 			case 0:
 				System.err.println("\nFinalizando o programa...");//Imprime a mensagem com a cor vermelha			
 				
-			case 1:
-		
+			case 1:		
 				ler.nextLine(); //limpeza de cashes			
 				Pacientes.add(preencher());
 				break;				
@@ -77,8 +76,9 @@ public class testeProjeto {
 					if(lista.getNome().equals(removePaciente)) 
 					{
 						Pacientes.remove(lista); 
+						System.err.println("\nPaciente removido do sistema!");
 						break;
-					}					
+					}	
 				}
 				break;				
 				
@@ -92,7 +92,7 @@ public class testeProjeto {
 				System.out.println("\n(B) Deseja alterar a idade.");
 				System.out.println("\n(C) Deseja alterar o gênero.");
 				System.out.println("\n------------------------------------------------------");
-				System.out.println("\nDigite sua opção: ");
+				System.out.println("\nDigite uma opção: ");
 				opb = ler.nextLine();
 				
 				while(cont<Pacientes.size()) //laço de repetição para percorrer a lista 
@@ -147,7 +147,7 @@ public class testeProjeto {
 				
 			case 5:
 				ler.nextLine();//limpeza de cashes
-				System.out.println("\nDigite o nome do paciente que deseja vizalizar as informações: ");
+				System.out.println("\nDigite o nome do paciente que deseja visualizar as informações: ");
 				String vizualizar = ler.nextLine();
 				for(calculos lista:Pacientes) 
 				{

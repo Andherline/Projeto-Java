@@ -35,7 +35,8 @@ public class Formulario {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
+	
 	public String getGenero() {
 		return genero;
 	}
