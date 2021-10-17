@@ -89,8 +89,9 @@ public class testeProjeto {
 
 				System.out.println("\n------------------------------------------------------");
 				System.out.println("\n(A) Deseja alterar o peso do paciente.");
-				System.out.println("\n(B) Deseja alterar a idade.");
-				System.out.println("\n(C) Deseja alterar o gênero.");
+				System.out.println("\n(B) Deseja alterar a estatura do paciente.");
+				System.out.println("\n(C) Deseja alterar a idade do paciente.");
+				System.out.println("\n(D) Deseja alterar o gênero do paciente.");
 				System.out.println("\n------------------------------------------------------");
 				System.out.println("\nDigite uma opção: ");
 				opb = ler.nextLine();
@@ -116,6 +117,15 @@ public class testeProjeto {
 					break;
 					
 				case "B":
+					System.out.println("\nDigite a estatura atual do paciente.");
+					float novaEstatura = ler.nextFloat();
+					
+					Pacientes.get(posicao).setEstatura(novaEstatura);	
+					System.out.println("\nInformações com a estatura atual do paciente: ");
+					Pacientes.get(posicao).imprimirInfo();
+					break;					
+					
+				case "C":
 					System.out.println("\nDigite a idade atual do paciente.");
 					int novaIdade = ler.nextInt();
 					
@@ -124,14 +134,14 @@ public class testeProjeto {
 					Pacientes.get(posicao).imprimirInfo();
 					break;
 				
-				case "C":
+				case "D":
 					System.out.println("\nDigite o gênero atual do paciente.");
 					String novoGenero = ler.nextLine();
 					
 					Pacientes.get(posicao).setGenero(novoGenero);
 					System.out.println("\nInformações com o gênero atual do paciente: ");
 					Pacientes.get(posicao).imprimirInfo();
-					break;					
+					break;							
 				}
 				break;		
 			
