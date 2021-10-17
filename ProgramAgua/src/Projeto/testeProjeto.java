@@ -17,6 +17,7 @@ public class testeProjeto {
 		
 		System.out.println("\nInsira o nome do paciente:");
 		nome = leia.next();
+		leia.nextLine();
 		System.out.println("\nInsira o gênero do paciente:");
 		genero = leia.next();
 		System.out.println("\nInsira a idade do paciente:");
@@ -133,6 +134,7 @@ public class testeProjeto {
 					Pacientes.get(posicao).imprimirInfo();
 					break;					
 				}
+				cont = 0;
 				break;		
 			
 			case 4:
