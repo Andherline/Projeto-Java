@@ -22,9 +22,14 @@ Elaboração de um formulário de pacientes para os profissionais da área da nu
 
 ## Link do GitHub dos membros do projeto
 [Anderson](https://github.com/Andherline)
+
 [Renan](https://github.com/RenanMoreira92)
+
 [Maiury](https://github.com/maiurysousa)
+
 [André](https://github.com/Dehzxg)
+
 [Darcy](https://github.com/DarcyOliveira)
+
 [Fernando](https://github.com/FernandoFCardoso)
 
